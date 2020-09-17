@@ -67,11 +67,37 @@ body{
   height:15vw;
 }
 #browse_more{
-    float:right;
-    margin-right:4.5vw;
+    /* float:right; */
+    margin:3vw;
+    /* margin:15px; */
+    
+   
+}
+#browse_More{
+  float: right;
+}
+/* sign in */
+.signMod{
+  display:none;
+}
+/* Modal */
+.registered{
+  display: none;
+}
+.category{
+  display: none;
+}
+.upload{
+  display: none;
+}
+.sign_in{
+  display: none;
 }
 
-/* Modal */
+#myModal_sign{
+  display: none;
+}
+
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -86,13 +112,13 @@ body{
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
-  
+  /* signin */
   /* Modal Content */
   .modal-content {
     background-color: white;
     margin: auto;
     padding: 20px;
-    
+   
     width: 40vw;
     
   }
@@ -125,7 +151,8 @@ list-style:none;
 }
 
 .modal-inside{
-    padding:1vw 3vw 1vw 3vw;
+    /* padding:1vw 3vw 1vw 3vw; */
+    align-items: center;
 }
 
 

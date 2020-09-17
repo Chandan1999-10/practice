@@ -5,18 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HobbyHub</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="homestyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <linkrel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/bootstrap.min.css">    
+<link rel="stylesheet" href="homestyle.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
         <a class="navbar-brand" href="#" id="logo">hobbyHub</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon">
-              
-          </span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarText">
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -33,7 +38,7 @@
           </ul>
           <span class="navbar-text">
             <button type="button" class="btn btn-primary" id="join">Join</button>
-            <button type="button" class="btn btn-light">Sign In</button>
+            <button type="button" class="btn btn-light" id="sign">Sign In</button>
           </span>
         </div>
       </nav>
@@ -86,7 +91,7 @@
     
        
 </div>
-<button type="button" class="btn btn-primary" id="browse_more">Browse More</button>
+<button type="button" class="btn btn-primary" id="browse_More" >Browse More</button>
 <div class="container1" id="popular_freelancers_name">Popular Freelancers</div>
     <div id="popular_freelancers" class="container1">
   
@@ -98,7 +103,7 @@
     
     
   </div>
-  <button type="button" class="btn btn-primary" id="browse_more">Browse More</button>
+  <button type="button" class="btn btn-primary" id="browse_More" >Browse More</button>
   <div class="container1" id="popular_freelancers_name">Services</div>
   <div id="popular_freelancers" class="container1">
 
@@ -113,20 +118,107 @@
 <div id="myModal" class="modal">
 
     
-  <div class="modal-content">
+  <div class="modal-content first_Modal">
       <div class="modal-inside">
          <div style="margin-bottom:2vw"> <span class="close">X</span></div>
 
-      <button type="button" class="btn btn-primary-outline" id="browse_more">Hire Freelancer</button>
-      <button type="button" class="btn btn-secondary" id="browse_more">Work As a Freelancer</button>
+      <button type="button" class="btn btn-outline-primary " id="browse_more">Hire   Freelancers </button><br>
+      <button type="button" class="btn btn-primary work" id="browse_more">Work as Freelancer </button>
       
       
       
       </div>
+      
     
+  </div>
+    <!-- register modal -->
+  <div class="modal-content  registered">
+    <div class="modal-inside">
+      <form>
+        <div class="form-group row">
+          <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="colFormLabel" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="colFormLabel" placeholder="col-form-label">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control form-control-lg" id="colFormLabelLg" placeholder="col-form-label-lg">
+          </div>
+        </div>
+      </form>
+
+    <button type="button" class="btn btn-outline-primary cancel" id="browse_more">Cancel </button>
+    <button type="button" class="btn btn-primary register" id="browse_more">Register </button>
+    
+    
+    
+    </div>
+
+</div>
+<!-- category modal -->
+<div class="modal-content  category">
+  <div class="modal-inside">
+    <form>
+      <div class="form-group row">
+        <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Category</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="colFormLabel" class="col-sm-2 col-form-label">Sub category</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="colFormLabel" placeholder="col-form-label">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Email</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control form-control-lg" id="colFormLabelLg" placeholder="col-form-label-lg">
+        </div>
+      </div>
+    </form>
+
+  <button type="button" class="btn btn-outline-primary cancel" id="browse_more">Cancel </button>
+  <button type="button" class="btn btn-primary continue" id="browse_more">continue </button>
+  
+  
+  
   </div>
 
 </div>
+<!-- upload modal -->
+<div class="modal-content  upload">
+  
+  <div class="modal-inside">
+    <h1>Upload</h1>
+    <form>
+      <div class="form-group row">
+        <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Category</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
+        </div>
+      </div>
+      
+    </form>
+
+  <button type="button" class="btn btn-outline-primary cancel" id="browse_more">Cancel </button>
+  <button type="button" class="btn btn-primary continue" id="browse_more">preview </button>
+  
+  
+  
+  </div>
+
+</div>
+
 <script>
 
   // Get the modal
@@ -147,13 +239,48 @@
   span.onclick = function() {
     modal.style.display = "none";
   }
+  // registration
+  $(".work").click(function(){
+    $(".registered").css("display","block")
+    $(".first_Modal").css("display","none")
+})
+// cancel redirect to first modal
+$(".cancel").click(function(){
+    $(".registered").css("display","none")
+    $(".first_Modal").css("display","block")
+    $(".category").css("display","none")
+    $(".upload").css("display","none")
+})
+// category modal appears
+$(".register").click(function(){
+    $(".category").css("display","block")
+    $(".first_Modal").css("display","none")
+    $(".registered").css("display","none")
+})
+// upload modal
+$(".continue").click(function(){
+    $(".upload").css("display","block")
+    $(".first_Modal").css("display","none")
+    $(".registered").css("display","none")
+    $(".category").css("display","none")
+})
+// sign in modal
+$("#sign").click(function(){
+ 
+    $(".sign_in").css("display","block")
   
+  alert();
+})
+
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function(event) {
     if (event.target == modal) {
       modal.style.display = "none";
     }
   }
+ 
+
+ 
   </script>
 </body>
 </html>
