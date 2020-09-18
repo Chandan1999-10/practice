@@ -122,7 +122,7 @@
       <div class="modal-inside">
          <div style="margin-bottom:2vw"> <span class="close">X</span></div>
 
-      <button type="button" class="btn btn-outline-primary " id="browse_more">Hire   Freelancers </button><br>
+      <button type="button" class="btn btn-outline-primary hire " id="browse_more">Hire   Freelancers </button><br>
       <button type="button" class="btn btn-primary work" id="browse_more">Work as Freelancer </button>
       
       
@@ -135,6 +135,7 @@
   <div class="modal-content  registered">
     <div class="modal-inside">
       <form>
+        <h1>Work as a freelancer</h1>
         <div class="form-group row">
           <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
           <div class="col-sm-10">
@@ -163,10 +164,11 @@
     </div>
 
 </div>
-<!-- category modal -->
-<div class="modal-content  category">
+<!-- customer modal -->
+<div class="modal-content  customer">
   <div class="modal-inside">
     <form>
+      <h1>Hire a freelancer</h1>
       <div class="form-group row">
         <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Category</label>
         <div class="col-sm-10">
@@ -188,36 +190,46 @@
     </form>
 
   <button type="button" class="btn btn-outline-primary cancel" id="browse_more">Cancel </button>
-  <button type="button" class="btn btn-primary continue" id="browse_more">continue </button>
+  <button type="button" class="btn btn-primary continue" id="browse_more">Register as Customer </button>
   
   
   
   </div>
 
-</div>
+</div></div>
 <!-- upload modal -->
-<div class="modal-content  upload">
-  
+<div class="modal-content  sign_in">
   <div class="modal-inside">
-    <h1>Upload</h1>
     <form>
+      <h1>Sign in </h1>
       <div class="form-group row">
-        <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Category</label>
+        <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
         <div class="col-sm-10">
           <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
         </div>
       </div>
-      
+      <div class="form-group row">
+        <label for="colFormLabel" class="col-sm-2 col-form-label">Sub category</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="colFormLabel" placeholder="col-form-label">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Email</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control form-control-lg" id="colFormLabelLg" placeholder="col-form-label-lg">
+        </div>
+      </div>
     </form>
 
-  <button type="button" class="btn btn-outline-primary cancel" id="browse_more">Cancel </button>
-  <button type="button" class="btn btn-primary continue" id="browse_more">preview </button>
+  <button type="button" class="btn btn-primary continue" id="browse_more">Log IN </button>
   
   
   
   </div>
 
-</div>
+
+
 
 <script>
 
@@ -248,26 +260,20 @@
 $(".cancel").click(function(){
     $(".registered").css("display","none")
     $(".first_Modal").css("display","block")
-    $(".category").css("display","none")
-    $(".upload").css("display","none")
+    $(".customer").css("display","none")
+ 
 })
-// category modal appears
-$(".register").click(function(){
-    $(".category").css("display","block")
+// customer modal appears
+$(".hire").click(function(){
+    $(".customer").css("display","block")
     $(".first_Modal").css("display","none")
     $(".registered").css("display","none")
 })
-// upload modal
-$(".continue").click(function(){
-    $(".upload").css("display","block")
-    $(".first_Modal").css("display","none")
-    $(".registered").css("display","none")
-    $(".category").css("display","none")
-})
+
 // sign in modal
 $("#sign").click(function(){
  
-    $(".sign_in").css("display","block")
+    $(".sign_in").css("display","none")
   
   alert();
 })
