@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Upload Works | HobbyHub </title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <linkrel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/poppe.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VlZH81PoG7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="upload1style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+        <a class="navbar-brand" href="homepage.html" id="logo">hobbyHub</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="homepage.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+          </ul>
+          <span class="navbar-text">
+            <button type="button" class="btn btn-warning"  style="color: black;" id="join">Join</button>
+            <button type="button" class="btn btn-light" id="sign">Sign In</button>
+          </span>
+        </div>
+      </nav>
+    <!--Modal-->
+<div id="myModal" class="modal">
+
+    
+  <div class="modal-content first_Modal">
+      <div class="modal-inside">
+         <div style="margin-bottom:2vw"> <span class="close">X</span></div>
+
+      <button type="button" class="btn btn-primary hire " id="browse_more">Hire   Freelancers </button><br>
+      <button type="button" class="btn btn-warning work" id="browse_more">Work as Freelancer </button>
+      
+      
+      
+      </div>
+      
+    
+  </div>
+    <!-- register modal -->
+  <div class="modal-content  registered">
+    <div class="modal-inside">
+      <form>
+        <h1>Work as a freelancer</h1>
+        <div class="form-group row">
+          <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="colFormLabel" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="colFormLabel" placeholder="col-form-label">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control form-control-lg" id="colFormLabelLg" placeholder="col-form-label-lg">
+          </div>
+        </div>
+      </form>
+
+    <button type="button" class="btn btn-outline-primary cancel" id="browse_more">Cancel </button>
+    <button type="button" class="btn btn-primary register" id="browse_more">Register </button>
+    
+    
+    
+    </div>
+
+</div>
+<!-- customer modal -->
+<div class="modal-content  customer">
+  <div class="modal-inside">
+    <form>
+      <h1>Hire a freelancer</h1>
+      <div class="form-group row">
+        <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Category</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="colFormLabel" class="col-sm-2 col-form-label">Sub category</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="colFormLabel" placeholder="col-form-label">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Email</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control form-control-lg" id="colFormLabelLg" placeholder="col-form-label-lg">
+        </div>
+      </div>
+    </form>
+
+  <button type="button" class="btn btn-outline-primary cancel" id="browse_more">Cancel </button>
+  <button type="button" class="btn btn-primary continue" id="browse_more">Register as Customer </button>
+  
+  
+  
+  </div>
+
+</div></div>
+<!-- upload modal -->
+<!--Sign In modal-->
+<div id="myModal1" class="modal">
+
+   <div class="modal-content  sign_in">
+      <div style="margin-bottom:2vw"> <span class="close" id="close_signin">X</span></div>
+      <div class="modal-inside">
+
+        <form>
+           <h1>Sign in </h1>
+           <div class="form-group row">
+              <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
+           <div class="col-sm-10">
+              <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
+           </div>
+      
+           <div class="form-group row">
+              <label for="colFormLabel" class="col-sm-2 col-form-label">Sub category</label>
+              <div class="col-sm-10">
+               <input type="email" class="form-control" id="colFormLabel" placeholder="col-form-label">
+              </div>
+          </div>
+          <div class="form-group row">
+             <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Email</label>
+             <div class="col-sm-10">
+                <input type="email" class="form-control form-control-lg" id="colFormLabelLg" placeholder="col-form-label-lg">
+             </div>
+           </div>
+        </form>
+
+        <button type="button" class="btn btn-primary continue" id="browse_more">Log IN </button>
+  
+      </div>
+    </div>
+  
+  </div>
+</div>
+<div class="container">
+<div id="searcharea">
+        <div id="searchbar">
+            
+            
+                <div class="form-row align-items-center">
+                  <div class="col-auto"><h2>Preview</h></div>
+                 
+                </div>
+              
+
+        </div>
+
+ </div>
+<div class="row" id="uploaded_contents">
+  <div class="col-lg-2">1</div>
+  <div class="col-lg-2">1</div>
+  <div class="col-lg-2">1</div>
+  <div class="col-lg-1" style="background-color:white">1</div>
+  <div class="col-lg-4">1</div>
+  
+ 
+</div>
+
+<button type="button" class="btn btn-light" id="cancel">Cancel</button>
+<button type="button" class="btn btn-warning"  style="color: black;" id="submit">Submit</button>
+
+<script>
+
+  // Get the modal
+  var modal = document.getElementById("myModal");
+  
+  // Get the button that opens the modal
+  var btn = document.getElementById("join");
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks the button, open the modal 
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  // registration
+  $(".work").click(function(){
+    $(".registered").css("display","block")
+    $(".first_Modal").css("display","none")
+})
+// cancel redirect to first modal
+$(".cancel").click(function(){
+    $(".registered").css("display","none")
+    $(".first_Modal").css("display","block")
+    $(".customer").css("display","none")
+ 
+})
+// customer modal appears
+$(".hire").click(function(){
+    $(".customer").css("display","block")
+    $(".first_Modal").css("display","none")
+    $(".registered").css("display","none")
+})
+
+// sign in modal
+$("#sign").click(function(){
+ 
+    $(".sign_in").css("display","block");
+    $("#myModal1").css("display","block");
+
+
+  
+    $(".sign_in").css("display","")
+  
+})
+$("#close_signin").click(function(){
+  $(".sign_in").css("display","none");
+    $("#myModal1").css("display","none");
+
+})
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+ 
+window.onclick = function(event) {
+    if (event.target == myModal1) {
+      myModal1.style.display = "none";
+    }
+  }
+ 
+  </script>
+</body>
+</html>
