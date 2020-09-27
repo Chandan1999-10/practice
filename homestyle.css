@@ -171,11 +171,7 @@ list-style:none;
   }
   
   /* Style the container */
-  .container {
-    
-   
-    padding: 20px;
-  }
+ 
   
   /* Floating column for labels: 25% width */
   .col-25 {
@@ -240,4 +236,21 @@ list-style:none;
   .modal-inside1{
      padding:1vw 3vw 1vw 3vw;
     align-items: center;
+}
+/* mobile responsive */
+@media screen and (max-width: 600px) {
+
+
+  #popular_services{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    justify-content: center;
+    margin-left:20vw ;
+}
+#popular_services div{
+  height:50vw;
+  width: 50vw;
+}
+
 }

@@ -11,3 +11,9 @@
     background-color: khaki;
     margin: 4vw;
 }
+.updates{
+    background-color: lightcoral;
+    height:300px ;
+    width:100%;
+    display:none;
+}
