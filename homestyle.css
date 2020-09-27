@@ -85,7 +85,11 @@ main_content{
   display: none;
 }
 
-
+.imageBox{
+  height:100%;
+  width:100%;
+  background-image: url("https://source.unsplash.com/random");
+}
 
 /* The Modal (background) */
 .modal {
@@ -243,7 +247,6 @@ list-style:none;
     display:flex;
     flex-wrap: wrap;
     flex-direction:column;
-    justify-content: center;
     margin-left:20vw ;
 }
 #popular_services div{
