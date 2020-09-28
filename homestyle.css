@@ -31,7 +31,7 @@ body{
   height:200px;
   width:300px;
   margin: 1vw;
-  background-color: lavenderblush;
+  background-image: url("https://source.unsplash.com/random");
   outline: 1px solid grey;
  
 }
@@ -50,6 +50,14 @@ main_content{
     font-weight:bold;
     font-size:2vw;
     margin-top:2vw;
+}
+.custom-shape-divider-top-1601277874 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
 }
 
 #popular_freelancers_name{
