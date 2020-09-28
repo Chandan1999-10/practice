@@ -8,14 +8,14 @@ $tbl_name="users";
 $email = stripslashes($email);
 $pass = stripslashes($pass);
 $phone=stripslashes($phone);
-$wmail = mysql_real_escape_string($email);
-$pass = mysql_real_escape_string($pass);
-$phone = mysql_real_escape_string($phone);
+$wmail = mysqli_real_escape_string($email);
+$pass = mysqli_real_escape_string($pass);
+$phone = mysqli_real_escape_string($phone);
 $sql="SELECT * FROM $tbl_name WHERE email='$email' and password='$pass'";
-$result=mysql_query($sql);
+$result=mysqli_query($sql);
 
 
-$count=mysql_num_rows($result);
+$count=mysqli_num_rows($result);
 
 // If result matched $username and $password, table row must be 1 row
 if($count==1){
@@ -25,9 +25,9 @@ if($count==1){
 
     
 
-    $details = mysql_query($query);
+    $details = mysqli_query($query);
 
-    $row = mysql_fetch_array($details);
+    $row = mysqli_fetch_array($details);
        
 
     
