@@ -34,7 +34,7 @@ if($count==1){
     
 	$home="home.php";
 	$userid=$row['id'];
-	$usertype=$rows['usertype'];
+	$usertype=$row['usertype'];
     session_start();
     $_SESSION['loggedin'] = true;
     $_SESSION['userid'] = $userid;

@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HobbyHub</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <linkrel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
@@ -17,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light" id="navbar">
+    <nav class="navbar  navbar-expand-lg navbar-light bg-light" id="navbar">
         <a class="navbar-brand" href="#" id="logo">hobbyHub</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -82,7 +86,7 @@
         </div>
 
     </div>
-    <h1 style="text-align: center; margin: 2%;">POPULAR FREELANCERS</h1>
+    <h1 style="text-align: center; margin:10% 0 5% 0;">POPULAR FREELANCERS</h1>
     <!-- carousel -->
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
@@ -117,7 +121,7 @@
       </a>
     </div>
    <!--  -->
-   <h1 style="text-align: center; margin: 2%;">POPULARAR SERVICES</h1>
+   <h1 style="text-align: center; margin:10% 0 5% 0">POPULARAR SERVICES</h1>
    <div id="carousel2" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -154,41 +158,77 @@
     <!-- end -->
   
 <!-- about us -->
-<h1 style="text-align: center; margin: 2%;">About us</h1>
+<h1 style="text-align: center; margin:10% 0 5% 0">About us</h1>
 <div class="container">
 <div class="row ">
-  <div class="col-lg-6">
+  <div class="col-lg-6 abt_content">
     <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, 
     quis nostrum exercitationem ullam corporis suscipit laboriosam,
      nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit 
      qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
   </p></div>
-     <div class="col-lg-6">
+     <div class="col-lg-6 abt_content">
        <div class="imageBox"></div>
 </div>
     </div>
-    <h1 style="text-align: center; margin: 2%;">About us</h1>
-    <div class="container">
-    <div class="row ">
-      <div class="col-lg-6">
-        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, 
-        quis nostrum exercitationem ullam corporis suscipit laboriosam,
-         nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit 
-         qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-      </p></div>
-         <div class="col-lg-6">
-           <div class="imageBox"></div>
-    </div>
+    <!-- services -->
+    <h1 style="text-align: center; margin:10% 0 5% 0">Services</h1>
+
+    <div class="card-group serv">
+      <div class="card">
+        <img class="card-img-top" src="https://source.unsplash.com/random" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
-
-
-
-
-        <div class="custom-shape-divider-top-1601277874">
-          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-              <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-          </svg>
       </div>
+      <div class="card">
+        <img class="card-img-top" src="https://source.unsplash.com/random" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="https://source.unsplash.com/random" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+    <!-- testimonials -->
+    <h1 style="text-align: center; margin:10% 0 5% 0">testimonials</h1>
+    <div id="carouselExample" class="carousel slide testi" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+         
+          <h5>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h5>
+        </div>
+        <div class="carousel-item">
+          <h5>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h5>
+
+        </div>
+        <div class="carousel-item">
+          <h5>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h5>
+
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+
+
 
 
 
@@ -198,21 +238,21 @@
 
     
   <div class="modal-content first_Modal ">
-      <div class="modal-inside">
-         <div style="margin-bottom:2vw"> <span class="close">X</span></div>
+      <div class="modal-inside new">
+         <div style="margin-bottom:2vw"> <span class="close"><i class="fas fa-times-circle  fa-2x"></i></span></div>
 
       <button type="button" class="btn btn-warning hire "  style="color: black;" id="browse_more">Hire   Freelancers </button><br>
       <button type="button" class="btn btn-warning work"  style="color: black;" id="browse_more">Work as Freelancer </button>
       
-      
+    
       
       </div>
       
     
   </div>
     <!-- register modal -->
-  <div class="modal-content  registered">
-    <div class="modal-inside">
+  <div class="modal-content  registered ">
+    <div class="modal-inside container">
       <form>
         <h1>Work as a freelancer</h1>
         <div class="form-group row">
@@ -279,7 +319,7 @@
 <div id="myModal1" class="modal">
 
    <div class="modal-content  sign_in">
-      <div style="margin-bottom:2vw"> <span class="close" id="close_signin">X</span></div>
+      <div style="margin-bottom:2vw"> <span class="close" id="close_signin"><i class="fas fa-times-circle fa-2x"></i></span></div>
       <div class="modal-inside">
 
         <form>
@@ -307,13 +347,25 @@
         <button type="button" class="btn btn-primary continue" id="browse_more">Log IN </button>
   
       </div>
-    </div>
+    </div></div>
   
+  </div></div>
+
+  <!-- footer -->
+  
+  <div class="footer_content" >
+
+   
   </div>
+  <footer class="">
+    <h3 style="text-align: center; color: blanchedalmond;">Hobby hub</h3>
+
+   
+  </footer>
 
 
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script>
 <script>
 
   // Get the modal
@@ -382,6 +434,32 @@ window.onclick = function(event) {
       myModal1.style.display = "none";
     }
   }
+  // scroll animation
+  $(document).ready(function(){
+$(".abt_content").waypoint(function(direction){
+  $(".abt_content").addClass('animate__animated animate__zoomIn')
+},{
+  offset:'70%'
+}
+
+)
+$(".serv").waypoint(function(direction){
+  $(".serv").addClass('animate__animated animate__rollIn')
+},{
+  offset:'70%'
+}
+
+
+)
+$(".testi").waypoint(function(direction){
+  $(".testi").addClass('animate__animated animate__slideInLeft')
+},{
+  offset:'70%'
+}
+
+)
+
+  })
  
   </script>
 </body>
