@@ -8,6 +8,9 @@ body{
 #logo{
     margin-right:200px;
 }
+.log{
+  height:10vw ;
+}
 .abt_content,.serv,.testi{
   opacity: 0;
 }
