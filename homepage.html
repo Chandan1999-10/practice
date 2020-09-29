@@ -36,7 +36,7 @@
               <a class="nav-link" href="#">Service</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link" href="#about">About Us</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Contact Us</a>
@@ -77,8 +77,8 @@
                         <option value="audi">Audi</option>
                       </select>
                   </div>
-                  <div class="col-auto">
-                    <button type="submit" class="btn btn-warning mb-2"><i  class="fa fa-search" aria-hidden="true"></i></button>
+                  <div style="margin-left: 1vw;" class="col-auto ser_btn">
+                    <button  type="submit" class="btn btn-warning mb-2 "><i  class="fa fa-search fa-2x animate__animated animate__infinite animate__pulse" aria-hidden="true"></i></button>
                   </div>
                 </div>
               </form>
@@ -158,7 +158,7 @@
     <!-- end -->
   
 <!-- about us -->
-<h1 style="text-align: center; margin:10% 0 5% 0">About us</h1>
+<h1 id="about" style="text-align: center; margin:10% 0 5% 0">About us</h1>
 <div class="container">
 <div class="row ">
   <div class="col-lg-6 abt_content">
@@ -241,8 +241,8 @@
       <div class="modal-inside new">
          <div style="margin-bottom:2vw"> <span class="close"><i class="fas fa-times-circle  fa-2x"></i></span></div>
 
-      <button type="button" class="btn btn-warning hire "  style="color: black;" id="browse_more">Hire   Freelancers </button><br>
-      <button type="button" class="btn btn-warning work"  style="color: black;" id="browse_more">Work as Freelancer </button>
+      <button type="button" class="btn btn-warning hire "  style="color: black;" id="browse_more"><h4>Hire Freelancers</h4> </button><br>
+      <button type="button" class="btn btn-warning work"  style="color: black;" id="browse_more"><h4>Work as Freelancer</h4> </button>
       
     
       
@@ -252,29 +252,19 @@
   </div>
     <!-- register modal -->
   <div class="modal-content  registered ">
-    <div class="modal-inside container">
-      <form>
-        <h1>Work as a freelancer</h1>
-        <div class="form-group row">
-          <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
-          <div class="col-sm-10">
-            <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
-          </div>
+    <div class="modal-inside ">
+      <form class="container">
+        <div class="form-group">
+          <h1 style="text-align: center;">Freelancer</h1>
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
-        <div class="form-group row">
-          <label for="colFormLabel" class="col-sm-2 col-form-label">Email</label>
-          <div class="col-sm-10">
-            <input type="email" class="form-control" id="colFormLabel" placeholder="col-form-label">
-          </div>
-        </div>
-        <div class="form-group row">
-          <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Email</label>
-          <div class="col-sm-10">
-            <input type="email" class="form-control form-control-lg" id="colFormLabelLg" placeholder="col-form-label-lg">
-          </div>
-        </div>
-      </form>
-
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>   
+     
     <button type="button" class="btn btn-outline-primary cancel" id="browse_more">Cancel </button>
     <button type="button" class="btn btn-primary register" id="browse_more">Register </button>
     
@@ -286,27 +276,16 @@
 <!-- customer modal -->
 <div class="modal-content  customer">
   <div class="modal-inside">
-    <form>
-      <h1>Hire a freelancer</h1>
-      <div class="form-group row">
-        <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Category</label>
-        <div class="col-sm-10">
-          <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
-        </div>
-      </div>
-      <div class="form-group row">
-        <label for="colFormLabel" class="col-sm-2 col-form-label">Sub category</label>
-        <div class="col-sm-10">
-          <input type="email" class="form-control" id="colFormLabel" placeholder="col-form-label">
-        </div>
-      </div>
-      <div class="form-group row">
-        <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Email</label>
-        <div class="col-sm-10">
-          <input type="email" class="form-control form-control-lg" id="colFormLabelLg" placeholder="col-form-label-lg">
-        </div>
-      </div>
-    </form>
+    <div class="form-group">
+      <h1 style="text-align: center;">Hire Freelancers</h1>
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>   
 
   <button type="button" class="btn btn-outline-primary cancel" id="browse_more">Cancel </button>
   <button type="button" class="btn btn-primary continue" id="browse_more">Register as Customer </button>
@@ -323,28 +302,18 @@
       <div class="modal-inside">
 
         <form>
-           <h1>Sign in </h1>
-           <div class="form-group row">
-              <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
-           <div class="col-sm-10">
-              <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
-           </div>
-      
-           <div class="form-group row">
-              <label for="colFormLabel" class="col-sm-2 col-form-label">Sub category</label>
-              <div class="col-sm-10">
-               <input type="email" class="form-control" id="colFormLabel" placeholder="col-form-label">
-              </div>
+           <div class="form-group">
+            <h1 style="text-align: center;">Login</h1>
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
-          <div class="form-group row">
-             <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Email</label>
-             <div class="col-sm-10">
-                <input type="email" class="form-control form-control-lg" id="colFormLabelLg" placeholder="col-form-label-lg">
-             </div>
-           </div>
-        </form>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>   
 
-        <button type="button" class="btn btn-primary continue" id="browse_more">Log IN </button>
+        <button style="margin-left:auto ;"  type="button" class="btn btn-primary btn-block continue" id="browse_more"><h3 style="color: white;">Log IN </h3></button>
   
       </div>
     </div></div>
