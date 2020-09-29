@@ -9,7 +9,7 @@ body{
     margin-right:200px;
 }
 .log{
-  height:10vw ;
+  height:5vw ;
 }
 .abt_content,.serv,.testi{
   opacity: 0;
@@ -292,13 +292,13 @@ div.new{
     align-items: center;
 } */
 /* mobile responsive */
-@media screen and (max-width: 650px) {
+@media screen and (max-width:600px) {
 
 
   #popular_services{
     display:flex;
     flex-wrap: wrap;
-    flex-direction:column;
+    flex-direction:row;
     margin-left:20vw ;
 }
 #popular_services div{
@@ -308,38 +308,36 @@ div.new{
 #searcharea{
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f1e767+0,feb645+100;Yellow+3D */
 background: #f1e767; /* Old browsers */
-background: -moz-linear-gradient(top,  #f1e767 0%, #feb645 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #f1e767 0%,#feb645 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to bottom,  #f1e767 0%,#feb645 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645',GradientType=0 ); /* IE6-9 */
 
   background-position: center;
   background-size:cover;
-  height:50vw;
+  height:70vw;
 }
 .modal-content {
   background-color: white;
   margin: auto;
-  padding: 20px;
-  width: 60vw;
+  padding:10px;
+  width: 70vw;
 }
 .registered,.customer,.sign_in{
   background-color: white;
   margin: auto;
-  padding: auto;
-  width: 80vw;
+  padding: 5vw;
+  padding-bottom: 10vw;
+  width: 90vw;
 }
 #searchbar{
-  margin-left:2vw;
-  margin-right:2px;
-  padding-top:20vw;
+  margin-left:10vw;
+  margin-right:0px;
+  padding-top:10vw;
   
 }
 
 
 }
 /*  */
-@media screen and (min-width:600px) {
+ @media screen and (min-width:600px) { 
 
 
 .modal-content {
@@ -356,4 +354,4 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', end
 }
 
 
-}
+} 
