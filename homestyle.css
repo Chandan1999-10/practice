@@ -3,7 +3,18 @@ body{
   margin: 0;
   height: 100vh;
     font-family: 'Poppins', sans-serif;
+  overflow-x:hidden ;
    
+}
+#browse:hover{
+  transform: scale(1.4);
+  transition: 300ms;
+
+}
+.bigHeading{
+  font-size: 4vw;
+  text-align: center;
+  margin: 2vw;
 }
 #logo{
     margin-right:200px;
@@ -54,8 +65,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', end
   transition:600ms;
  
 }
+#browse{
+  margin-left:35%;
+  margin-top:1%;
+  transform: scale(1.2);
+}
 /* particle js*/
+.main_box{
 
+  margin-left:19vw;
+  
+}
 #particles-js{
   height: 100%;
   background-color: red;
@@ -122,6 +142,7 @@ footer{
     
    
 }
+
 
 
 #browse_More{
@@ -293,7 +314,39 @@ div.new{
 } */
 /* mobile responsive */
 @media screen and (max-width:600px) {
+.main_box{
+ 
+  margin-left: 10%;
+}
+.{
+  padding: 1%;
+  font-size: 1vw;
+}
+  .box{
+    height:100px ;
+    width:100px;
+  }
+  .box:hover{
+    transform:translateY(-4px);
+    height:125px;
+    width: 125px;
+  }
+.bigHeading{
+  font-size:10vw ;
+  margin-top: 8%;
 
+
+}
+#browse:hover{
+  transform: scale(1.1);
+  transition: 300ms;
+
+}
+#browse{
+  margin-left:23%;
+  margin-top:1%;
+  transform: scale(1);
+}
 
   #popular_services{
     display:flex;
@@ -322,15 +375,16 @@ background: linear-gradient(to bottom,  #f1e767 0%,#feb645 100%); /* W3C, IE10+,
 }
 .registered,.customer,.sign_in{
   background-color: white;
-  margin: auto;
-  padding: 5vw;
-  padding-bottom: 10vw;
+  margin:auto;
+  padding:40px;
+  height: auto;
   width: 90vw;
 }
 #searchbar{
   margin-left:10vw;
   margin-right:0px;
   padding-top:10vw;
+  padding-top:15vw;
   
 }
 
@@ -352,6 +406,7 @@ background: linear-gradient(to bottom,  #f1e767 0%,#feb645 100%); /* W3C, IE10+,
   padding:2vw;
   width: 50vw;
 }
+
 
 
 } 
