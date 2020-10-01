@@ -7,8 +7,9 @@ body{
    
 }
 #browse:hover{
-  transform: scale(1.4);
+  
   transition: 300ms;
+  transform: skewX(-20deg);
 
 }
 .bigHeading{
@@ -57,9 +58,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', end
   
 }
 .box{
-  height:200px;
-  width:300px;
-  margin: 1vw;
+  height:100px;
+  width:100px;
+  margin: 2vw;
   background-image: url("https://source.unsplash.com/random");
   outline: 1px solid grey;
   transition:600ms;
@@ -105,14 +106,6 @@ footer{
     font-weight:bold;
     font-size:2vw;
     margin-top:2vw;
-}
-.custom-shape-divider-top-1601277874 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
 }
 
 #popular_freelancers_name{
@@ -323,13 +316,12 @@ div.new{
   font-size: 1vw;
 }
   .box{
-    height:100px ;
-    width:100px;
+    height:150px ;
+    width:150px;
   }
   .box:hover{
-    transform:translateY(-4px);
-    height:125px;
-    width: 125px;
+    height:170px;
+    width:170px;
   }
 .bigHeading{
   font-size:10vw ;
@@ -387,7 +379,9 @@ background: linear-gradient(to bottom,  #f1e767 0%,#feb645 100%); /* W3C, IE10+,
   padding-top:15vw;
   
 }
-
+.log {
+  height: 20vw;
+}
 
 }
 /*  */
@@ -406,7 +400,21 @@ background: linear-gradient(to bottom,  #f1e767 0%,#feb645 100%); /* W3C, IE10+,
   padding:2vw;
   width: 50vw;
 }
+.box{
+  height:200px ;
+  width:100px;
+  
+}
+#browse{
+  margin-left:39%;
+  margin-top:1%;
+  transform: scale(1.2);
+}
+/* particle js*/
+.main_box{
 
-
+  margin-left:15vw;
+  
+}
 
 } 
