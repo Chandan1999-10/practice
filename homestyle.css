@@ -306,7 +306,7 @@ div.new{
     align-items: center;
 } */
 /* mobile responsive */
-@media screen and (max-width:600px) {
+@media screen and (max-width:700px) {
 .main_box{
  
   margin-left: 10%;
@@ -385,36 +385,3 @@ background: linear-gradient(to bottom,  #f1e767 0%,#feb645 100%); /* W3C, IE10+,
 
 }
 /*  */
- @media screen and (min-width:600px) { 
-
-
-.modal-content {
-  background-color: white;
-  margin: auto;
-  padding: 20px;
-  width: 40vw;
-}
-.registered,.customer,.sign_in{
-  background-color: white;
-  margin: auto;
-  padding:2vw;
-  width: 50vw;
-}
-.box{
-  height:200px ;
-  width:100px;
-  
-}
-#browse{
-  margin-left:39%;
-  margin-top:1%;
-  transform: scale(1.2);
-}
-/* particle js*/
-.main_box{
-
-  margin-left:15vw;
-  
-}
-
-} 
