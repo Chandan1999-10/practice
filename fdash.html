@@ -67,25 +67,145 @@
 
 </div> 
 <div class="col-lg-4">
-  <button class="btn btn-block btn-outline-warning">Pending work</button>
+  <button id="pend" class="btn btn-block btn-outline-warning">Pending work</button>
   
   </div>
   <div class="col-lg-4">
-    <button class="btn btn-block btn-outline-warning">completed</button>
+    <button id="done" class="btn btn-block btn-outline-warning">completed</button>
     
     </div>
 </div>
 </div>
 
-<div class="container">
-<div class="updates"></div>
+<div class="container order">
+
+<div class="table-responsive"></div>
+
+  <table class=" table table-responsive table-striped table-warning mt-2">
+    <thead>
+      <tr>
+        
+        <th scope="col"><h3>New Order</h3</th>
+          <th></th>
+          <th></th>
+       <th><button class="btn btn-block btn-outline-primary ">View all order</button></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>You recieves a new order for illustration</td>
+        <td><button class="btn btn-info">View</button></td>
+        <td><button class="btn btn-warning">Accept</button> <button class="btn btn-primary">Decline</button></td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>You recieves a new order for illustration</td>
+        <td><button class="btn btn-info">View</button></td>
+        <td><button class="btn btn-warning">Accept</button> <button class="btn btn-primary">Decline</button></td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>You recieves a new order for illustration</td>
+        <td><button class="btn btn-info">View</button></td>
+        <td><button class="btn btn-warning">Accept</button> <button class="btn btn-primary">Decline</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+</div>
+<!-- pending -->
+<div class="container pending">
+
+
+  <table class="table table-striped table-warning mt-2">
+    <thead>
+      <tr>
+        
+        <th scope="col"><h3>Pending Order</h3</th>
+          <th></th>
+          <th></th>
+       <th><button class="btn btn-block btn-outline-primary ">View all order</button></th>
+       
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>You recieves a new order for illustration</td>
+        <td><button class="btn btn-info">View</button></td>
+        <td> <button class="btn btn-primary">Mark as done</button></td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>You recieves a new order for illustration</td>
+        <td><button class="btn btn-info">View</button></td>
+        <td> <button class="btn btn-primary">Mark as done</button></td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>You recieves a new order for illustration</td>
+        <td><button class="btn btn-info">View</button></td>
+        <td> <button class="btn btn-primary">Mark as done</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+</div>
+<!-- completed -->
+<div class="container comp">
+
+
+  <table class="table table-striped table-warning mt-2">
+    <thead>
+      <tr>
+        
+        <th scope="col"><h3>Completed Order</h3</th>
+       
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>You recieves a new order for illustration</td>
+        <td><button class="btn btn-info">View</button></td>
+        <td>400$</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>You recieves a new order for illustration</td>
+        <td><button class="btn btn-info">View</button></td>
+        <td> 20$</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>You recieves a new order for illustration</td>
+        <td><button class="btn btn-info">View</button></td>
+        <td> 203$</td>
+      </tr>
+    </tbody>
+  </table>
 
 
 </div>
 
 
-
 <script>
+  $("#work").click(function(){
+    $(".order").css("display","block")
+    $(".comp,.pending").css("display","none")
+  })
+  $("#pend").click(function(){
+    $(".pending").css("display","block")
+    $(".comp,.order").css("display","none")
+  })
+  $("#done").click(function(){
+    $(".comp").css("display","block")
+    $(".pending,.order").css("display","none")
+  })
 
 </script>
 

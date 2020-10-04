@@ -301,20 +301,17 @@ div.new{
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
-  /* .modal-inside1{
+  .modal-inside1{
      padding:1vw 3vw 1vw 3vw;
     align-items: center;
-} */
+}
 /* mobile responsive */
-@media screen and (max-width:700px) {
+@media screen and (max-width:600px) {
 .main_box{
  
-  margin-left: 10%;
+  margin-left: 15%;
 }
-.{
-  padding: 1%;
-  font-size: 1vw;
-}
+
   .box{
     height:150px ;
     width:150px;
@@ -324,7 +321,7 @@ div.new{
     width:170px;
   }
 .bigHeading{
-  font-size:10vw ;
+  font-size:5vw ;
   margin-top: 8%;
 
 
@@ -385,3 +382,82 @@ background: linear-gradient(to bottom,  #f1e767 0%,#feb645 100%); /* W3C, IE10+,
 
 }
 /*  */
+@media screen and (max-width:1100px)and (min-width:600px) {
+  .main_box{
+   
+    margin-left: 15%;
+  }
+  body{
+
+    overflow-x: hidden;
+  }
+  
+    .box{
+      height:200px ;
+      width:200px;
+    }
+    .box:hover{
+      height:170px;
+      width:170px;
+    }
+  .bigHeading{
+    font-size:5vw ;
+    margin-top: 8%;
+  
+  
+  }
+  #browse:hover{
+    transform: scale(1.1);
+    transition: 300ms;
+  
+  }
+  #browse{
+    margin-left:35%;
+    margin-top:1%;
+    transform: scale(1.2);
+  }
+  
+    #popular_services{
+      display:flex;
+      flex-wrap: wrap;
+      flex-direction:row;
+      margin-left:20vw ;
+  }
+  #popular_services div{
+    height:50vw;
+    width: 50vw;
+  }
+  #searcharea{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f1e767+0,feb645+100;Yellow+3D */
+  background: #f1e767; /* Old browsers */
+  background: linear-gradient(to bottom,  #f1e767 0%,#feb645 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  
+    background-position: center;
+    background-size:cover;
+    height:40vw;
+  }
+  .modal-content {
+    background-color: white;
+    margin: auto;
+    padding:10px;
+    width: 70vw;
+  }
+  .registered,.customer,.sign_in{
+    background-color: white;
+    margin:auto;
+    padding:40px;
+    height: auto;
+    width: 90vw;
+  }
+  #searchbar{
+    margin-left:20vw;
+    margin-right:0px;
+    padding-top:10vw;
+    padding-top:15vw;
+    
+  }
+  .log {
+    height: 15vw;
+  }
+  
+  }
