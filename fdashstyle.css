@@ -14,15 +14,14 @@
     background-color: khaki;
     margin: 4vw;
 }
-.order{
 
-}
 .order,.comp,.pending{
     display:none;
     background-color:;
     height:300px ;
-    width:70%;
-    margin-top: 2vw;
+    width:95%;
+    
+    margin-top:4vw;
     padding:3vw;
     border:grey 2px solid;
 }
