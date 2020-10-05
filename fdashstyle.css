@@ -15,7 +15,7 @@
     margin: 4vw;
 }
 
-.order,.comp,.pending{
+.order,.comp,.pending,.capsule1,.capsule2,.capsule3{
     display:none;
     background-color:;
     height:300px ;
