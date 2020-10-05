@@ -44,14 +44,32 @@ margin: 1vw;
     height: 7vw;
 }
 .orders{
-background-color: gray;
-height:100px;
-width:70% ;
+background-color:;
+height:;
+width:90% ;
 margin: auto;
+padding: 2%;
 
 
 
 }
+/* service2 */
+
+.push{
+background-color: gray;
+height: 200px;
+width: 200px;
+margin:1%;
+}
+
+.gallery{
+    margin-left:8%;
+    margin-bottom:8%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
 @media screen and (max-width:500px) {
 
     .create{
