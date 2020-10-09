@@ -25,6 +25,24 @@
     padding:3vw;
     border:grey 2px solid;
 }
+
+/* admin panel  */
+.charges{
+
+height:50px;
+width: 100px;
+background-color:goldenrod;
+font-size: 2rem;
+padding-left: 2%;
+
+
+}
+
+
+
+
+
+
 /* repso */
 @media screen and (max-width: 900px) and (min-width: 300px){
     .profile-img{
@@ -47,8 +65,8 @@ h4{
 .bot{
     padding: 1%;
 }
-table{
-    
+.img-fluid{
+    height: 150px;
 }
 
 }
